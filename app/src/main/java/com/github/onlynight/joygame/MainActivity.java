@@ -1,14 +1,16 @@
 package com.github.onlynight.joygame;
 
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import com.github.onlynight.joygame.base.BaseVDBFragmentActivity;
+import com.github.onlynight.joygame.databinding.ActivityFragmentBaseBinding;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseVDBFragmentActivity {
+
+    private HomeFragment mFragment;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    protected void onBind(ActivityFragmentBaseBinding dataBinding) {
+        mFragment = new HomeFragment();
+        attachFragment(mFragment);
     }
-    
+
 }
