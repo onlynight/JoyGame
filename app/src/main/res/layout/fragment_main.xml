@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layoutBase"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/part_toolbar"/>
+
+        <com.github.onlynight.noswipeviewpager.library.NoSwipeViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#cccccc"/>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/bottomTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:tabIndicatorHeight="0dp">
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout="@layout/item_tab_news"/>
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout="@layout/item_tab_talk"/>
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout="@layout/item_tab_game"/>
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout="@layout/item_tab_me"/>
+
+        </android.support.design.widget.TabLayout>
+
+    </LinearLayout>
+
+</layout>

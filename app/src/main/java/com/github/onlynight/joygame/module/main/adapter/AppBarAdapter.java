@@ -1,5 +1,6 @@
-package com.github.onlynight.joygame;
+package com.github.onlynight.joygame.module.main.adapter;
 
+import com.github.onlynight.joygame.R;
 import com.github.onlynight.joygame.base.BaseVDBTemplateAdapter;
 import com.github.onlynight.joygame.data.AppBarData;
 import com.github.onlynight.joygame.databinding.ItemAppBarViewBinding;
